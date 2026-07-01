@@ -5,7 +5,7 @@ Welcome to my **Personal Life & Skills Portfolio** web page. This is a clean, st
 ---
 
 ## 🚀 Live Demo
-🌐 **GitHub Pages**: [dhanushr-dev.github.io/My-second-html-project](https://dhanushr-dev.github.io/My-second-html-project/) *(if deployed)*
+🌐 **GitHub Pages**: [dhanushr-dev.github.io/My-second-html-project](https://dhanushr-dev.github.io/My-second-html-project/)
 
 ---
 
