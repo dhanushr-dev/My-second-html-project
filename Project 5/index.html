@@ -1,0 +1,656 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Combined HTML Form - All Tags</title>
+  </head>
+  <body>
+    <header>
+      <h1>Combined HTML Form</h1>
+    </header>
+
+    <main>
+      <form
+        id="combinedForm"
+        action="#"
+        method="post"
+        autocomplete="on"
+        enctype="multipart/form-data"
+      >
+        <fieldset>
+          <legend>Personal Information</legend>
+          <table border="1" cellpadding="6" cellspacing="0">
+            <thead>
+              <tr>
+                <th>Label</th>
+                <th>Input</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><label for="fname">First Name</label></td>
+                <td>
+                  <input
+                    type="text"
+                    id="fname"
+                    name="fname"
+                    placeholder="Ex: Harshit"
+                    autocomplete="given-name"
+                    required
+                    autofocus
+                  />
+                </td>
+              </tr>
+
+              <tr>
+                <td><label for="lname">Last Name</label></td>
+                <td>
+                  <input
+                    type="text"
+                    id="lname"
+                    name="lname"
+                    placeholder="Ex: Kumar"
+                    autocomplete="family-name"
+                    required
+                  />
+                </td>
+              </tr>
+
+              <tr>
+                <td><label for="surname">Surname</label></td>
+                <td>
+                  <input
+                    type="text"
+                    id="surname"
+                    name="surname"
+                    placeholder="Ex: T"
+                    autocomplete="additional-name"
+                  />
+                </td>
+              </tr>
+
+              <tr>
+                <td><label for="email">Email</label></td>
+                <td>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="abc@gmail.com"
+                    autocomplete="email"
+                    required
+                  />
+                </td>
+              </tr>
+
+              <tr>
+                <td><label for="password">Password</label></td>
+                <td>
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    minlength="8"
+                    autocomplete="new-password"
+                    required
+                  /><br /><small>Minimum 8 characters</small>
+                </td>
+              </tr>
+
+              <tr>
+                <td><label for="cpassword">Confirm Password</label></td>
+                <td>
+                  <input
+                    type="password"
+                    id="cpassword"
+                    name="confirm_password"
+                    minlength="8"
+                    autocomplete="new-password"
+                    required
+                  />
+                </td>
+              </tr>
+
+              <tr>
+                <td><label for="phone">Phone / Mobile</label></td>
+                <td>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="987-897-0987"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    autocomplete="tel"
+                    required
+                  />
+                </td>
+              </tr>
+
+              <tr>
+                <td><label for="age">Age</label></td>
+                <td>
+                  <input
+                    type="number"
+                    id="age"
+                    name="age"
+                    min="18"
+                    max="100"
+                    step="1"
+                    required
+                  />
+                </td>
+              </tr>
+
+              <tr>
+                <td><label for="dob">Date of Birth</label></td>
+                <td>
+                  <input
+                    type="date"
+                    id="dob"
+                    name="dob"
+                    autocomplete="bday"
+                    required
+                  />
+                </td>
+              </tr>
+
+              <tr>
+                <td><label for="time">Preferred Time</label></td>
+                <td><input type="time" id="time" name="time" required /></td>
+              </tr>
+
+              <tr>
+                <td><label for="datetime">Interview Date &amp; Time</label></td>
+                <td>
+                  <input
+                    type="datetime-local"
+                    id="datetime"
+                    name="datetime"
+                    required
+                  />
+                </td>
+              </tr>
+
+              <tr>
+                <td><label for="month">Month</label></td>
+                <td><input type="month" id="month" name="month" /></td>
+              </tr>
+
+              <tr>
+                <td><label for="week">Week</label></td>
+                <td><input type="week" id="week" name="week" /></td>
+              </tr>
+
+              <tr>
+                <td>Gender</td>
+                <td>
+                  <input
+                    type="radio"
+                    id="male"
+                    name="gender"
+                    value="Male"
+                    required
+                  /><label for="male">Male</label>
+                  <input
+                    type="radio"
+                    id="female"
+                    name="gender"
+                    value="Female"
+                    required
+                  /><label for="female">Female</label>
+                  <input
+                    type="radio"
+                    id="other"
+                    name="gender"
+                    value="Other"
+                    required
+                  /><label for="other">Other</label>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Skills</td>
+                <td>
+                  <input
+                    type="checkbox"
+                    id="skill-html"
+                    name="skill"
+                    value="HTML"
+                  /><label for="skill-html">HTML</label>
+                  <input
+                    type="checkbox"
+                    id="skill-css"
+                    name="skill"
+                    value="CSS"
+                  /><label for="skill-css">CSS</label>
+                  <input
+                    type="checkbox"
+                    id="skill-js"
+                    name="skill"
+                    value="JavaScript"
+                  /><label for="skill-js">JavaScript</label>
+                  <input
+                    type="checkbox"
+                    id="skill-py"
+                    name="skill"
+                    value="Python"
+                  /><label for="skill-py">Python</label>
+                </td>
+              </tr>
+
+              <tr>
+                <td><label for="country">Country</label></td>
+                <td>
+                  <select
+                    id="country"
+                    name="country"
+                    autocomplete="country-name"
+                    required
+                  >
+                    <option value="">--Select--</option>
+                    <option value="IN">India</option>
+                    <option value="US">USA</option>
+                    <option value="CA">Canada</option>
+                    <option value="AU">Australia</option>
+                  </select>
+                </td>
+              </tr>
+
+              <tr>
+                <td><label for="city">City</label></td>
+                <td>
+                  <input
+                    list="cities"
+                    id="city"
+                    name="city"
+                    autocomplete="address-level2"
+                    required
+                  />
+                  <datalist id="cities">
+                    <option value="Bangalore"></option>
+                    <option value="Chennai"></option>
+                    <option value="Hyderabad"></option>
+                    <option value="Mumbai"></option>
+                  </datalist>
+                </td>
+              </tr>
+
+              <tr>
+                <td><label for="address">Address</label></td>
+                <td>
+                  <textarea
+                    id="address"
+                    name="address"
+                    rows="4"
+                    cols="40"
+                    autocomplete="street-address"
+                    required
+                  ></textarea>
+                </td>
+              </tr>
+
+              <tr>
+                <td><label for="picture">Upload Picture</label></td>
+                <td>
+                  <input
+                    type="file"
+                    id="picture"
+                    name="picture"
+                    accept="image/png, image/jpeg"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </fieldset>
+
+        <br />
+
+        <fieldset>
+          <legend>Course Details</legend>
+          <table border="1" cellpadding="6" cellspacing="0">
+            <thead>
+              <tr>
+                <th colspan="2">Field</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><label for="course">Course</label></td>
+                <td>
+                  <select id="course" name="course" required>
+                    <option value="">--Select Course--</option>
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="JavaScript">JavaScript</option>
+                  </select>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Delivery Mode</td>
+                <td>
+                  <input
+                    type="checkbox"
+                    id="delivery-online"
+                    name="delivery"
+                    value="ONLINE"
+                  /><label for="delivery-online">ONLINE</label>
+                  <input
+                    type="checkbox"
+                    id="delivery-offline"
+                    name="delivery"
+                    value="OFFLINE"
+                  /><label for="delivery-offline">OFFLINE</label>
+                </td>
+              </tr>
+
+              <tr>
+                <td><label for="primary_skill">Primary Skill</label></td>
+                <td>
+                  <input
+                    list="skillsList"
+                    id="primary_skill"
+                    name="primary_skill"
+                    required
+                  />
+                  <datalist id="skillsList">
+                    <option value="HTML"></option>
+                    <option value="CSS"></option>
+                    <option value="JavaScript"></option>
+                    <option value="Python"></option>
+                  </datalist>
+                </td>
+              </tr>
+
+              <tr>
+                <td><label for="specialization">Specialization</label></td>
+                <td>
+                  <select id="specialization" name="specialization" required>
+                    <optgroup label="Web">
+                      <option value="Frontend">Frontend</option>
+                      <option value="Backend">Backend</option>
+                    </optgroup>
+                    <optgroup label="AI">
+                      <option value="ML">ML</option>
+                      <option value="DL">DL</option>
+                    </optgroup>
+                  </select>
+                </td>
+              </tr>
+
+              <tr>
+                <td><label for="hobbies">Hobbies</label></td>
+                <td>
+                  <select id="hobbies" name="hobbies" multiple size="4">
+                    <option value="Reading">Reading</option>
+                    <option value="Coding">Coding</option>
+                    <option value="Gaming">Gaming</option>
+                    <option value="Music">Music</option>
+                  </select>
+                </td>
+              </tr>
+
+              <tr>
+                <td><label for="comments">Comments</label></td>
+                <td>
+                  <textarea
+                    id="comments"
+                    name="comments"
+                    rows="4"
+                    cols="40"
+                    maxlength="500"
+                  ></textarea>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </fieldset>
+
+        <br />
+
+        <fieldset>
+          <legend>Additional Input Types</legend>
+          <table id="tbl-additional" border="1" cellpadding="6" cellspacing="0">
+            <thead>
+              <tr>
+                <th colspan="2">Field</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><label for="url">Website</label></td>
+                <td>
+                  <input
+                    type="url"
+                    id="url"
+                    name="url"
+                    placeholder="https://example.com"
+                  />
+                </td>
+              </tr>
+
+              <tr>
+                <td><label for="search">Search</label></td>
+                <td><input type="search" id="search" name="search" /></td>
+              </tr>
+
+              <tr>
+                <td><label for="color">Favorite Color</label></td>
+                <td>
+                  <input type="color" id="color" name="color" value="#22303f" />
+                </td>
+              </tr>
+
+              <tr>
+                <td><label for="range">Experience (yrs)</label></td>
+                <td>
+                  <input
+                    type="range"
+                    id="range"
+                    name="range"
+                    min="0"
+                    max="10"
+                    step="1"
+                    value="0"
+                  />
+                </td>
+              </tr>
+
+              <tr>
+                <td><label for="documents">Documents</label></td>
+                <td>
+                  <input
+                    type="file"
+                    id="documents"
+                    name="documents"
+                    multiple
+                    accept=".pdf,.doc,.docx"
+                  />
+                </td>
+              </tr>
+
+              <tr>
+                <td><label for="readonly_field">Readonly</label></td>
+                <td>
+                  <input
+                    type="text"
+                    id="readonly_field"
+                    name="readonly_field"
+                    value="Cannot edit this"
+                    readonly
+                  />
+                </td>
+              </tr>
+
+              <tr>
+                <td><label for="disabled_field">Disabled</label></td>
+                <td>
+                  <input
+                    type="text"
+                    id="disabled_field"
+                    name="disabled_field"
+                    value="Disabled field"
+                    disabled
+                  />
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <label for="pattern_field">Pattern (Letters only)</label>
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    id="pattern_field"
+                    name="pattern_field"
+                    pattern="[A-Za-z]+"
+                    placeholder="Letters only"
+                    required
+                  />
+                </td>
+              </tr>
+
+              <tr>
+                <td><label for="output_result">Output</label></td>
+                <td>
+                  <output id="output_result" name="output_result" for="range"
+                    >0</output
+                  >
+                </td>
+              </tr>
+
+              <tr>
+                <td><label for="progress_bar">Progress</label></td>
+                <td>
+                  <progress id="progress_bar" value="70" max="100">
+                    70%
+                  </progress>
+                </td>
+              </tr>
+
+              <tr>
+                <td><label for="meter_gauge">Meter</label></td>
+                <td>
+                  <meter
+                    id="meter_gauge"
+                    value="0.6"
+                    min="0"
+                    max="1"
+                    low="0.3"
+                    high="0.8"
+                    optimum="1"
+                  >
+                    60%
+                  </meter>
+                </td>
+              </tr>
+
+              <tr>
+                <td><label for="image_submit">Image Button</label></td>
+                <td>
+                  <input
+                    type="image"
+                    id="image_submit"
+                    name="image_submit"
+                    src="https://via.placeholder.com/60"
+                    alt="Submit"
+                    width="60"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </fieldset>
+
+        <br />
+
+        <fieldset>
+          <legend>Hidden Fields</legend>
+          <table border="1" cellpadding="6" cellspacing="0">
+            <thead>
+              <tr>
+                <th colspan="2">Field</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Hidden: User ID</td>
+                <td>
+                  <input type="hidden" id="userid" name="userid" value="101" />
+                </td>
+              </tr>
+
+              <tr>
+                <td>Hidden: Registration Code</td>
+                <td>
+                  <input
+                    type="hidden"
+                    id="regcode"
+                    name="regcode"
+                    value="COURSE-REG-2026"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </fieldset>
+
+        <br />
+
+        <fieldset>
+          <legend>Buttons</legend>
+          <table border="1" cellpadding="6" cellspacing="0">
+            <thead>
+              <tr>
+                <th colspan="2">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <input
+                    type="submit"
+                    id="submit_btn"
+                    name="submit_btn"
+                    value="Submit Form"
+                  />
+                  <input
+                    type="reset"
+                    id="reset_btn"
+                    name="reset_btn"
+                    value="Reset Form"
+                  />
+                  <input
+                    type="button"
+                    id="click_btn"
+                    name="click_btn"
+                    value="Click Me"
+                    onclick="alert('Button clicked')"
+                  />
+                  <button
+                    type="button"
+                    id="button_element"
+                    name="button_element"
+                  >
+                    Button Element
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </fieldset>
+      </form>
+    </main>
+
+    <footer>
+      <p>
+        <small
+          >All fields marked required must be filled before this form can be
+          submitted.</small
+        >
+      </p>
+    </footer>
+  </body>
+</html>
